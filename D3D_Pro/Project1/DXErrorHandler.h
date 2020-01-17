@@ -1,34 +1,39 @@
 #pragma once
-#include <Exception>
-#include <stdio.h>
-#include <D3d11.h>
+
 
 namespace DX
 {
 	class com_exception : public std::exception
 	{
 	public:
-		com_exception(HRESULT hr) : result(hr) {}
+		com_exception(int line, const char* file, HRESULT hr) noexcept; 
+		virtual const char* what() const noexcept override; 
 
-		virtual const char* what() const override {
-			static char s_str[64] = {}; 
-			sprintf_s(s_str, "Failed with HRESULT of %08X",
-				static_cast<unsigned int>(result)); 
-			return s_str;  
-		}
+		virtual const char* GetType() const noexcept; 
+		int Getline() const noexcept; 
+		const std::string& GetFile() const noexcept; 
+		std::string GetOriginString() const noexcept;  
+
+		static std::string TranslateErrorCode(HRESULT hr) noexcept;
+		HRESULT GetErrorCode() const noexcept;  
+		std::string GetErrorString() const noexcept;  
 
 	private : 
-		HRESULT result; 
-	};
+		int line; 
+		std::string file; 
+		HRESULT hr; 
 
+	protected :
+		mutable std::string whatBuffer; 
+	};  
+};
+namespace DX
+{ 
 	inline void ThrowIfFailed(HRESULT hr)
 	{
 		if (FAILED(hr))
 		{
-			throw com_exception(hr); 
+			//throw com_exception(__LINE__, __FILE__, hr);
 		}
 	}
-
-
-
-};
+}

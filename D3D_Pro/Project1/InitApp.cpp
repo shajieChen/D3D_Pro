@@ -1,3 +1,4 @@
+#include "phc.h"
 #include "InitApp.h"
 InitApp::InitApp()
 {
