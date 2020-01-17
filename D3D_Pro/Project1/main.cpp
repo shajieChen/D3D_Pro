@@ -1,5 +1,7 @@
 #include <Windows.h>
 #include <iOStream>
+#include <D3d11.h> 
+int Run(); 
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 {
@@ -63,17 +65,63 @@ int CALLBACK WinMain(
 	ShowWindow(hwnd, SW_SHOW);
 	UpdateWindow(hwnd);
 
+	//SwapChain
+	DXGI_SWAP_CHAIN_DESC sd = {}; 
+	sd.BufferDesc.Width = 0; 
+	sd.BufferDesc.Height = 0; 
+	sd.BufferDesc.Format = DXGI_FORMAT_R8G8B8A8_UNORM; 
+	sd.BufferDesc.RefreshRate.Numerator = 0; 
+	sd.BufferDesc.RefreshRate.Denominator = 0; 
+	sd.BufferDesc.Scaling = DXGI_MODE_SCALING_UNSPECIFIED; 
+	sd.BufferDesc.ScanlineOrdering = DXGI_MODE_SCANLINE_ORDER_UNSPECIFIED; 
+	sd.SampleDesc.Count = 1; 
+	sd.SampleDesc.Quality = 0;
+	sd.BufferUsage = DXGI_USAGE_RENDER_TARGET_OUTPUT; 
+	sd.BufferCount = 1; 
+	sd.OutputWindow = hwnd;  
+	sd.SwapEffect = DXGI_SWAP_EFFECT_DISCARD;  
+	sd.Flags = 0; 
+	//
+	ID3D11Device* pDevice = nullptr; 
+	IDXGISwapChain* pSwap = nullptr; 
+	ID3D11DeviceContext* pContext = nullptr; 
+	ID3D11RenderTargetView* pTarget = nullptr; 
+
+	//device 
+	D3D11CreateDeviceAndSwapChain(
+		nullptr, D3D_DRIVER_TYPE_HARDWARE, nullptr , 0 ,
+		nullptr, 0, D3D11_SDK_VERSION , &sd ,&pSwap, 
+		&pDevice, nullptr , &pContext
+	);
+	//back buffer
+	ID3D11Resource* pBackBuffer = nullptr; 
+	pSwap->GetBuffer(0, __uuidof(ID3D11Resource), reinterpret_cast<void**>(&pBackBuffer)); 
+	pDevice->CreateRenderTargetView(pBackBuffer, nullptr , &pTarget);
+	pBackBuffer->Release();
+
+
+
 	//callBack 
-	MSG msg; 
-	BOOL gResult; 
-	while ((gResult = GetMessage(&msg, nullptr , 0, 0)) > 0 )
+	MSG msg;
+	BOOL gResult;
+	while ((gResult = GetMessage(&msg, nullptr, 0, 0)) > 0)
 	{
-		TranslateMessage(&msg);
+		//clear Buffer 
+		const float color[] = { 1.0f , 0.0f, 0.0f, 1.0f };
+		pContext->ClearRenderTargetView(pTarget , color);
+
 		DispatchMessage(&msg);
+
+		//present
+		pSwap->Present(1u,0u);
 	}
 	switch (gResult)
 	{
-		case -1: return -1; 
-		default: return msg.wParam; 
+	case -1: return -1;
+	default: return msg.wParam;
 	}
 }
+int Run()
+{
+	return 1; 
+ }
