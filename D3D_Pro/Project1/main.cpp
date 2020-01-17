@@ -1,6 +1,7 @@
 #include <Windows.h>
 #include <iOStream>
 #include <D3d11.h> 
+#pragma comment (lib, "D3D11.lib")
 int Run(); 
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
@@ -11,7 +12,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 			PostQuitMessage(0);
 			break; 
 		case WM_LBUTTONDOWN:
-			MessageBox(0, "helloworld", "HelloWind",MB_OK );
+			MessageBox(0, "helloworld", "HelloWind", MB_OK);
 			return 0; 
 		case WM_KEYDOWN :
 			if (wParam == VK_ESCAPE)
@@ -32,6 +33,11 @@ int CALLBACK WinMain(
 	int nCmdShow
 )
 {
+#if defined(DEBUG) | defined(_DEBUG)
+	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+#endif
+
+
 	const auto pClassName = "D3D_Pro"; 
 	//window 
 	WNDCLASSEX wc = { 0 }; 
@@ -93,6 +99,11 @@ int CALLBACK WinMain(
 		nullptr, 0, D3D11_SDK_VERSION , &sd ,&pSwap, 
 		&pDevice, nullptr , &pContext
 	);
+
+	if (FAILED(pDevice))
+	{ 
+		MessageBox(0, "Failed to Create the pDevice", "Failed", MB_OK);
+	}
 	//back buffer
 	ID3D11Resource* pBackBuffer = nullptr; 
 	pSwap->GetBuffer(0, __uuidof(ID3D11Resource), reinterpret_cast<void**>(&pBackBuffer)); 
