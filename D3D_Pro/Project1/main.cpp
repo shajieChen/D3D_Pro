@@ -1,6 +1,8 @@
 #include <Windows.h>
 #include <iOStream>
 #include <D3d11.h> 
+#include <DirectXMath.h>
+#include "DXErrorHandler.h"
 #pragma comment (lib, "D3D11.lib")
 int Run(); 
 
@@ -96,17 +98,24 @@ int CALLBACK WinMain(
 	ID3D11DeviceContext* pContext = nullptr; 
 	ID3D11RenderTargetView* pTarget = nullptr; 
 
-	//device 
-	D3D11CreateDeviceAndSwapChain(
-		nullptr, D3D_DRIVER_TYPE_HARDWARE, nullptr , 0 ,
-		nullptr, 0, D3D11_SDK_VERSION , &sd ,&pSwap, 
-		&pDevice, nullptr , &pContext
-	);
 
-	if (FAILED(pDevice))
-	{ 
-		MessageBox(0, "Failed to Create the pDevice", "Failed", MB_OK);
+	try
+	{
+		DX::ThrowIfFailed(
+			//device 
+			D3D11CreateDeviceAndSwapChain(
+				nullptr, D3D_DRIVER_TYPE_HARDWARE, nullptr, 0,
+				nullptr, 0, D3D11_SDK_VERSION, &sd, &pSwap,
+				&pDevice, nullptr, &pContext
+			)
+		);
 	}
+	catch (const std::exception&)
+	{
+		return FALSE; 
+	}
+
+
 	//back buffer
 	ID3D11Resource* pBackBuffer = nullptr; 
 	pSwap->GetBuffer(0, __uuidof(ID3D11Resource), reinterpret_cast<void**>(&pBackBuffer)); 
