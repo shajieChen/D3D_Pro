@@ -32,8 +32,8 @@ namespace DX
 	inline void ThrowIfFailed(HRESULT hr)
 	{
 		if (FAILED(hr))
-		{
-			//throw com_exception(__LINE__, __FILE__, hr);
+		{ 
+			//throw com_exception(line, file, hr );
 		}
 	}
-}
+} 

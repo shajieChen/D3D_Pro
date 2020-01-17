@@ -152,6 +152,8 @@
     </FxCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="CRenderCommand.cpp" />
+    <ClCompile Include="CRenderer.cpp" />
     <ClCompile Include="CTimer.cpp" />
     <ClCompile Include="DXErrorHandler.cpp" />
     <ClCompile Include="InitApp.cpp" />
@@ -160,6 +162,8 @@
     <ClCompile Include="Renderer.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="CRenderCommand.h" />
+    <ClInclude Include="CRenderer.h" />
     <ClInclude Include="CTimer.h" />
     <ClInclude Include="DXErrorHandler.h" />
     <ClInclude Include="InitApp.h" />
