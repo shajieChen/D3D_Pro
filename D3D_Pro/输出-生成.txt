@@ -1,0 +1,48 @@
+﻿1>------ 已启动生成: 项目: D3D_Pro, 配置: Debug x64 ------
+1>App.cpp
+1>CBuffer.cpp
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x170 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x171 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x172 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x173 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x174 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x175 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x176 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x177 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x17a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x17c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x266 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x267 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x268 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x269 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x26a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x26b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x26c 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x26d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x271 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x273 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x274 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x276 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x279 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x27a 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x27b 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x27d 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x27e 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x27f 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x280 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x281 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x282 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x2d0 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x2d1 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x2d2 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x2d3 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x2d4 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x2d5 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x2d6 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(1,1): warning C4828: 文件包含在偏移 0x2d7 处开始的字符，该字符在当前源字符集中无效(代码页 65001)。
+1>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\CBuffer.cpp(26,47): warning C4267: “=”: 从“size_t”转换到“UINT”，可能丢失数据
+1>b_Cube.cpp
+1>正在生成代码...
+1>Project1.vcxproj -> E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\D3D_Pro.exe
+1>已完成生成项目“Project1.vcxproj”的操作。
+========== 生成: 成功 1 个，失败 0 个，最新 0 个，跳过 0 个 ==========

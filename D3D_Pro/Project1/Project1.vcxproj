@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{7109D5AD-BD30-4C7D-B836-1CBB3B773F45}</ProjectGuid>
+    <RootNamespace>Project1</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>D3D_Pro</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(ProjectDir)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(ProjectDir)</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_AMD64_;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <AdditionalIncludeDirectories>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\lib\imgui;E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\lib\microsoft-gltf\GLTFSDK\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <ShaderModel>4.0_level_9_3</ShaderModel>
+      <ObjectFileOutput>$(OutDir)%(Filename).cso</ObjectFileOutput>
+      <EntryPointName>main</EntryPointName>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_AMD64_;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\lib\imgui;E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\lib\microsoft-gltf\GLTFSDK\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <ShaderModel>4.0_level_9_3</ShaderModel>
+      <ObjectFileOutput>$(OutDir)%(Filename).cso</ObjectFileOutput>
+      <EntryPointName>main</EntryPointName>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_AMD64_;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\lib\imgui;E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\lib\microsoft-gltf\GLTFSDK\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <ShaderModel>4.0_level_9_3</ShaderModel>
+      <ObjectFileOutput>$(OutDir)%(Filename).cso</ObjectFileOutput>
+      <EntryPointName>main</EntryPointName>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;_AMD64_;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>
+      </DisableSpecificWarnings>
+      <AdditionalOptions>/utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\lib\imgui;E:\Documents\direcx11Collection\D3D_Pro\D3D_Pro\Project1\lib\microsoft-gltf\GLTFSDK\Inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <FxCompile>
+      <ShaderModel>4.0_level_9_3</ShaderModel>
+      <ObjectFileOutput>$(OutDir)%(Filename).cso</ObjectFileOutput>
+      <EntryPointName>main</EntryPointName>
+      <TreatWarningAsError>false</TreatWarningAsError>
+    </FxCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\UV_Grid_Sm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.cpp" />
+    <ClCompile Include="b_Cube.cpp" />
+    <ClCompile Include="b_Triangle.cpp" />
+    <ClCompile Include="CBuffer.cpp" />
+    <ClCompile Include="CDXObjects.cpp" />
+    <ClCompile Include="CShader.cpp" />
+    <ClCompile Include="d3dApp.cpp" />
+    <ClCompile Include="d3dUtil.cpp" />
+    <ClCompile Include="DXException.cpp" />
+    <ClCompile Include="DXTrace.cpp" />
+    <ClCompile Include="Example.cpp" />
+    <ClCompile Include="lib\imgui\imgui.cpp" />
+    <ClCompile Include="lib\imgui\imgui_demo.cpp" />
+    <ClCompile Include="lib\imgui\imgui_draw.cpp" />
+    <ClCompile Include="lib\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="lib\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="lib\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="lib\imgui\misc\cpp\imgui_stdlib.cpp" />
+    <ClCompile Include="lib\imgui\misc\fonts\binary_to_compressed_c.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\AnimationUtils.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\BufferBuilder.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Color.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Deserialize.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Document.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Extension.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\ExtensionHandlers.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\ExtensionsKHR.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\GLBResourceReader.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\GLBResourceWriter.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\GLTFResourceWriter.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Math.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\MeshPrimitiveUtils.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\MicrosoftGeneratorVersion.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\PBRUtils.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\ResourceWriter.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Schema.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\SchemaValidation.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Serialize.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Validation.cpp" />
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Version.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="CRenderCommand.cpp" />
+    <ClCompile Include="CRenderer.cpp" />
+    <ClCompile Include="StepTimer.cpp" />
+    <ClCompile Include="WinMain.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.h" />
+    <ClInclude Include="b_Cube.h" />
+    <ClInclude Include="b_Triangle.h" />
+    <ClInclude Include="CBuffer.h" />
+    <ClInclude Include="CDXObjects.h" />
+    <ClInclude Include="CShader.h" />
+    <ClInclude Include="d3dApp.h" />
+    <ClInclude Include="d3dUtil.h" />
+    <ClInclude Include="DXException.h" />
+    <ClInclude Include="DXTrace.h" />
+    <ClInclude Include="Example.h" />
+    <ClInclude Include="lib\imgui\imconfig.h" />
+    <ClInclude Include="lib\imgui\imgui.h" />
+    <ClInclude Include="lib\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="lib\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="lib\imgui\imgui_internal.h" />
+    <ClInclude Include="lib\imgui\imstb_rectpack.h" />
+    <ClInclude Include="lib\imgui\imstb_textedit.h" />
+    <ClInclude Include="lib\imgui\imstb_truetype.h" />
+    <ClInclude Include="lib\imgui\misc\cpp\imgui_stdlib.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\AnimationUtils.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\BufferBuilder.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Color.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Constants.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Deserialize.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Document.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Exceptions.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Extension.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\ExtensionHandlers.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\ExtensionsKHR.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\ExtrasDocument.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\GLBResourceReader.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\GLBResourceWriter.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\GLTF.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\GLTFResourceReader.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\GLTFResourceWriter.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\IndexedContainer.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\IStreamCache.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\IStreamReader.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\IStreamWriter.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Math.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\MeshPrimitiveUtils.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\MicrosoftGeneratorVersion.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Optional.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\PBRUtils.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\RapidJsonUtils.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\ResourceReaderUtils.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\ResourceWriter.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Schema.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\SchemaValidation.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Serialize.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\StreamCache.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\StreamCacheLRU.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\StreamUtils.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Traverse.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Validation.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Version.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Visitor.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\allocators.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\cursorstreamwrapper.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\document.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\encodedstream.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\encodings.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\error\en.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\error\error.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\filereadstream.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\filewritestream.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\fwd.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\biginteger.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\diyfp.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\dtoa.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\ieee754.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\itoa.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\meta.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\pow10.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\regex.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\stack.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\strfunc.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\strtod.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\swap.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\istreamwrapper.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\memorybuffer.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\memorystream.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\msinttypes\inttypes.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\msinttypes\stdint.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\ostreamwrapper.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\pointer.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\prettywriter.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\rapidjson.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\reader.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\schema.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\stream.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\stringbuffer.h" />
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\writer.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="CRenderCommand.h" />
+    <ClInclude Include="CRenderer.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="StepTimer.h" />
+    <ClInclude Include="WinMain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="basicCubePS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="basicCubeVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+    <FxCompile Include="legacyPS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Pixel</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Pixel</ShaderType>
+    </FxCompile>
+    <FxCompile Include="legacyVS.hlsl">
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Vertex</ShaderType>
+      <ShaderType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Vertex</ShaderType>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D3D_Pro.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

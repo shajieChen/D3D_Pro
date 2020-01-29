@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="HLSL">
+      <UniqueIdentifier>{4df12029-c896-4eca-9c23-974cc7578cdb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ULT">
+      <UniqueIdentifier>{c033199d-d39f-46a8-bc1e-e886d6a261ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Core">
+      <UniqueIdentifier>{fee32806-93e4-42aa-bc64-239ff4d8f413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Useless">
+      <UniqueIdentifier>{cb1c914a-3fcd-48a6-82cc-5c481d6ed036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\IMGUI_h">
+      <UniqueIdentifier>{e447d370-8cc5-43ff-ad94-fa8141d59180}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\imGUI_cpp">
+      <UniqueIdentifier>{ca13950b-0a2d-4990-a922-523001dee6ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\gltf">
+      <UniqueIdentifier>{46e6d0d3-4b5d-48d0-bc94-348301cbe9d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\App_Entry">
+      <UniqueIdentifier>{97c4bce5-8d18-4d6a-a39e-a0d1be0e4448}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\App_Entry_h">
+      <UniqueIdentifier>{598c246d-570f-41e1-96ce-835541cec3f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\gltf_h">
+      <UniqueIdentifier>{222d2b52-11cc-4492-8a3d-6052c227dd60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Triangle_Exp_cpp">
+      <UniqueIdentifier>{564e3249-888d-4824-ae90-d018c3730933}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\UV_Grid_Sm.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="StepTimer.cpp">
+      <Filter>源文件\ULT</Filter>
+    </ClCompile>
+    <ClCompile Include="DXException.cpp">
+      <Filter>源文件\ULT</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>源文件\ULT</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dApp.cpp">
+      <Filter>源文件\Useless</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dUtil.cpp">
+      <Filter>源文件\Useless</Filter>
+    </ClCompile>
+    <ClCompile Include="DXTrace.cpp">
+      <Filter>源文件\Useless</Filter>
+    </ClCompile>
+    <ClCompile Include="CRenderCommand.cpp">
+      <Filter>源文件\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CRenderer.cpp">
+      <Filter>源文件\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CShader.cpp">
+      <Filter>源文件\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CDXObjects.cpp">
+      <Filter>源文件\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="CBuffer.cpp">
+      <Filter>源文件\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\imgui\imgui_widgets.cpp">
+      <Filter>源文件\imGUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\imgui\misc\fonts\binary_to_compressed_c.cpp">
+      <Filter>源文件\imGUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\imgui\imgui.cpp">
+      <Filter>源文件\imGUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\imgui\imgui_demo.cpp">
+      <Filter>源文件\imGUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\imgui\imgui_draw.cpp">
+      <Filter>源文件\imGUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\imgui\imgui_impl_dx11.cpp">
+      <Filter>源文件\imGUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\imgui\imgui_impl_win32.cpp">
+      <Filter>源文件\imGUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\imgui\misc\cpp\imgui_stdlib.cpp">
+      <Filter>源文件\imGUI_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>源文件\App_Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\AnimationUtils.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\BufferBuilder.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Color.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Deserialize.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Document.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Extension.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\ExtensionHandlers.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\ExtensionsKHR.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\GLBResourceReader.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\GLBResourceWriter.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\GLTFResourceWriter.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Math.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\MeshPrimitiveUtils.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\MicrosoftGeneratorVersion.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\PBRUtils.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\ResourceWriter.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Schema.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\SchemaValidation.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Serialize.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Validation.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="lib\microsoft-gltf\GLTFSDK\Source\Version.cpp">
+      <Filter>源文件\gltf</Filter>
+    </ClCompile>
+    <ClCompile Include="WinMain.cpp">
+      <Filter>源文件\App_Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="Example.cpp">
+      <Filter>源文件\Triangle_Exp_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="b_Triangle.cpp">
+      <Filter>源文件\Triangle_Exp_cpp</Filter>
+    </ClCompile>
+    <ClCompile Include="b_Cube.cpp">
+      <Filter>源文件\Triangle_Exp_cpp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="StepTimer.h">
+      <Filter>源文件\ULT</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>源文件\ULT</Filter>
+    </ClInclude>
+    <ClInclude Include="DXException.h">
+      <Filter>源文件\ULT</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dApp.h">
+      <Filter>源文件\Useless</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dUtil.h">
+      <Filter>源文件\Useless</Filter>
+    </ClInclude>
+    <ClInclude Include="DXTrace.h">
+      <Filter>源文件\Useless</Filter>
+    </ClInclude>
+    <ClInclude Include="CShader.h">
+      <Filter>源文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CDXObjects.h">
+      <Filter>源文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CBuffer.h">
+      <Filter>源文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CRenderer.h">
+      <Filter>源文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="CRenderCommand.h">
+      <Filter>源文件\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\imgui\imstb_truetype.h">
+      <Filter>头文件\IMGUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\imgui\imconfig.h">
+      <Filter>头文件\IMGUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\imgui\imgui.h">
+      <Filter>头文件\IMGUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\imgui\imgui_impl_dx11.h">
+      <Filter>头文件\IMGUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\imgui\imgui_impl_win32.h">
+      <Filter>头文件\IMGUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\imgui\imgui_internal.h">
+      <Filter>头文件\IMGUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\imgui\misc\cpp\imgui_stdlib.h">
+      <Filter>头文件\IMGUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\imgui\imstb_rectpack.h">
+      <Filter>头文件\IMGUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\imgui\imstb_textedit.h">
+      <Filter>头文件\IMGUI_h</Filter>
+    </ClInclude>
+    <ClInclude Include="App.h">
+      <Filter>头文件\App_Entry_h</Filter>
+    </ClInclude>
+    <ClInclude Include="WinMain.h">
+      <Filter>头文件\App_Entry_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\allocators.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\AnimationUtils.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\biginteger.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\BufferBuilder.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Color.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Constants.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\cursorstreamwrapper.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Deserialize.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\diyfp.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\document.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Document.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\dtoa.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\error\en.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\encodedstream.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\encodings.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\error\error.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Exceptions.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Extension.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\ExtensionHandlers.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\ExtensionsKHR.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\ExtrasDocument.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\filereadstream.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\filewritestream.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\fwd.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\GLBResourceReader.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\GLBResourceWriter.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\GLTF.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\GLTFResourceReader.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\GLTFResourceWriter.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\ieee754.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\IndexedContainer.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\msinttypes\inttypes.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\IStreamCache.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\IStreamReader.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\istreamwrapper.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\IStreamWriter.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\itoa.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Math.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\memorybuffer.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\memorystream.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\MeshPrimitiveUtils.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\meta.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\MicrosoftGeneratorVersion.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Optional.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\ostreamwrapper.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\PBRUtils.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\pointer.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\pow10.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\prettywriter.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\rapidjson.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\RapidJsonUtils.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\reader.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\regex.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\ResourceReaderUtils.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\ResourceWriter.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\schema.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Schema.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\SchemaValidation.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Serialize.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\stack.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\msinttypes\stdint.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\stream.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\StreamCache.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\StreamCacheLRU.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\StreamUtils.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\strfunc.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\stringbuffer.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\strtod.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\internal\swap.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Traverse.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Validation.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Version.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\GLTFSDK\Visitor.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\microsoft-gltf\GLTFSDK\Inc\rapidjson\writer.h">
+      <Filter>头文件\gltf_h</Filter>
+    </ClInclude>
+    <ClInclude Include="Example.h">
+      <Filter>源文件\Triangle_Exp_cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="b_Triangle.h">
+      <Filter>源文件\Triangle_Exp_cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="b_Cube.h">
+      <Filter>源文件\Triangle_Exp_cpp</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="legacyPS.hlsl">
+      <Filter>资源文件</Filter>
+    </FxCompile>
+    <FxCompile Include="legacyVS.hlsl">
+      <Filter>资源文件</Filter>
+    </FxCompile>
+    <FxCompile Include="basicCubeVS.hlsl">
+      <Filter>资源文件</Filter>
+    </FxCompile>
+    <FxCompile Include="basicCubePS.hlsl">
+      <Filter>资源文件</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="D3D_Pro.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
